@@ -58,7 +58,7 @@ angular.module('john')
                 state: "MI",
                 zip: "48226"
             },
-            website: '/#',
+            website: 'http://www.marriott.com/hotels/travel/dtwdc-courtyard-detroit-downtown/',
             comments: "John has a room in this hotel for the evening, if you were interested in getting one for yourself."
         }
         $scope.agenda.push(afterAfter)
