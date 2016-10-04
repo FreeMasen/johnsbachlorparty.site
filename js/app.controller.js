@@ -13,7 +13,8 @@ angular.module('john')
                 state: "MI",
                 zip: "48226"
             },
-            comments: "An early dinner so we can make it to the game on time! For more information about Townhouse visit them online at http://eatattownhouse.com/"
+            website: 'http://EatAtTownHouse.com',
+            comments: 'An early dinner so we can make it to the game on time! For more information about Townhouse visit them online at http://EatAtTownHouse.com'
         }
         $scope.agenda.push(dinner)
         var hockey = {
@@ -27,6 +28,7 @@ angular.module('john')
                 state: "MI",
                 zip: "48226"
             },
+            website: 'https://www.nhl.com/redwings/schedule',
             comments: "Watch the Detroit Red Wings take on the Toronto Maple Leafs in this pre-season match up.  More notes will be added here when they become available."
         }
         $scope.agenda.push(hockey)
@@ -41,6 +43,7 @@ angular.module('john')
                 state: "MI",
                 zip: "48226"
             },
+            website: '/#',
             comments: "Will update with more details as soon as I have them"
         }
         $scope.agenda.push(afterGame)
@@ -55,6 +58,7 @@ angular.module('john')
                 state: "MI",
                 zip: "48226"
             },
+            website: '/#',
             comments: "John has a room in this hotel for the evening, if you were interested in getting one for yourself."
         }
         $scope.agenda.push(afterAfter)

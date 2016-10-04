@@ -24,7 +24,7 @@
                         <span class="divider"> | </span> 
                         <span class="item">{{event.name}}</span>
                         <div class="location">
-                            <div class="name">{{event.location.name}}</div>
+                            <div class="name"><a ng-href="{{event.website}}">{{event.location.name}}</a></div>
                             <div class="address">{{event.location.address}}</div>
                             <div class="address" ng-if="event.location.address2.length > 0">{{event.location.address2}}</div>
                             <div class="last-line">
