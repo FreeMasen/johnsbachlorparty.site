@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="john">
+    <head>
+        <title>John's Bachlorparty Site</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.module.js"></script>
+        <script type="text/javascript" src="js/app.controller.js"></script>
+    </head>
+    <body>
+        <div class="wrapper" ng-controller="bparty">
+                <div class="header jumbotron">
+                    <h1 id="header-text">John Masen is getting married!</h1>
+                    <h2>lets show him a good time </h2>
+                </div>
+                <div class="agenda panel panel-primary">
+                    <div class="panel-heading">
+                        <h2>Agenda</h2>
+                    </div>
+                    <div class="panel-body">
+                <ul class="agenda list-group">
+                    <li ng-repeat="event in agenda" class="agenda-item list-group-item"><span class="time">{{event.time}}</span>
+                        <span class="divider"> | </span> 
+                        <span class="item">{{event.name}}</span>
+                        <div class="location">
+                            <div class="name">{{event.location.name}}</div>
+                            <div class="address">{{event.location.address}}</div>
+                            <div class="address" ng-if="event.location.address2.length > 0">{{event.location.address2}}</div>
+                            <div class="last-line">
+                            {{event.location.city}}, {{event.location.state}} {{event.location.zip}}
+                            </div>
+                        </div>
+                        <span class="comments">{{event.comments}}</span>
+                    </li>
+                </ul>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html> 
