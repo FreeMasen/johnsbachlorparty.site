@@ -62,4 +62,6 @@ angular.module('john')
             comments: "John has a room in this hotel for the evening, if you were interested in getting one for yourself."
         }
         $scope.agenda.push(afterAfter)
+
+        $scope.contact = 'mailto:r.f.masen+jbp@gmail.com?subject=John%27s%20Bachlor%20Party&body=Hello%20Robert%2c'
     }])
